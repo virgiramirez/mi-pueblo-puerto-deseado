@@ -1,21 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE MOBILE FIRST */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
   background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
   background-color: #005f73;
   color: white;
-  padding: 20px;
+  padding: 1rem;
+  text-align: center;
 }
 
+header h1 {
+  margin-bottom: 0.3rem;
+}
+
+/* MENÚ MOBILE */
 nav ul {
   list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 15px;
+  margin-top: 1rem;
+}
+
+nav li {
+  margin: 0.5rem 0;
 }
 
 nav a {
@@ -24,19 +39,85 @@ nav a {
   font-weight: bold;
 }
 
+/* CONTENIDO */
 main {
-  padding: 20px;
+  padding: 1rem;
 }
 
 section {
-  margin-bottom: 30px;
-  background: white;
-  padding: 15px;
-  border-radius: 5px;
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
 }
 
+h2, h3 {
+  margin-bottom: 0.5rem;
+  color: #005f73;
+}
+
+ul li {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+/* FORMULARIOS */
+form {
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+button {
+  background-color: #0a9396;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* FOOTER */
 footer {
-  background-color: #ddd;
   text-align: center;
-  padding: 10px;
+  padding: 0.8rem;
+  background-color: #ddd;
+  font-size: 0.9rem;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+
+  header {
+    text-align: left;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  button {
+    width: auto;
+  }
 }
