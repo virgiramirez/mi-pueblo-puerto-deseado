@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Pueblo | Puerto Deseado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mi Pueblo</h1>
+        <p>Portal informativo de Puerto Deseado</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="puerto-deseado.html">Puerto Deseado</a></li>
+                <li><a href="tramites.html">Trámites</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="turismo.html">Turismo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Servicios</h2>
+            <ul>
+                <li>Defensa del consumidor</li>
+                <li>
+                    <a href="https://www.farmaciasdeturno.com" target="_blank">
+                    Farmacias de turno
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Reclamos</h3>
+            <form id="reclamoForm">
+                <label>
+                    Nombre:
+                    <input type="text" id="nombre" required>
+                </label>
+                <label>
+                    Descripción del reclamo:
+                    <textarea id="descripcion" required></textarea>
+                </label>
+                <button type="submit">Enviar reclamo</button>
+            </form> 
+            <p id="mensaje"></p>
+        </section>
+    </main>
