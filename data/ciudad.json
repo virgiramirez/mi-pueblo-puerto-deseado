@@ -1,0 +1,14 @@
+{
+    "ciudad": "Puerto Deseado",
+    "descripcion": "Puerto Deseado es una ciudad costera ubicada en la provincia de Santa Cruz, reconocida por su riqueza natural, su puerto y su historia.",
+    "institucional": [
+        "Municipalidad de Puerto Deseado",
+        "Concejo Deliberante",
+        "Secretarías municipales"
+    ],
+    "telefonos_utiles": [
+        { "nombre": "Hospital", "telefono": "107" },
+        { "nombre": "Policía", "telefono": "101" },
+        { "nombre": "Bomberos", "telefono": "100" }
+    ]
+}
