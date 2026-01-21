@@ -44,6 +44,27 @@ fetch("../data/ciudad.json")
             });
         }
     })
+.catch(error => {
+    console.error("Error cargando datos:", error);
+});
+
+const turismoContainer = document.getElementById("turismo-container");
+
+if (turismoContainer) {
+    fetch("data/turismo.json")
+        .then(response => response.json())
+        .then(data => {
+            data.lugares.forEach(lugar => {
+                const card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+                    <h3>${lugar.nombre}</h3>
+                    <p>${lugar.descripcion}</p>
+                    `;
+                turismoContainer.appendChild(card);
+            });
+        })
     .catch(error => {
-        console.error("Error cargando datos:", error);
+        console.error("Error cargando turismo:", error);
     });
+}
