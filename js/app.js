@@ -15,7 +15,7 @@ if (form) {
 }
 
 // CARGA DE DATOS DESDE JSON (PUERTO DESEADO)
-fetch("data/ciudad.json")
+fetch("../data/ciudad.json")
     .then(response => response.json())
     .then(data => {
         const nombreCiudad = document.getElementById("nombreCiudad");
