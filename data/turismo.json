@@ -3,17 +3,17 @@
         {
             "nombre": "Ría Deseado",
             "descripcion": "Reserva natural con paisajes únicos, ideal para avistaje de fauna marina.",
-            "imagen": "img/ria-deseado.jpg"
+            "imagen": "../assets/images/ria.jpg"
         },
         {
             "nombre": "Museo Mario Brozoski",
             "descripcion": "Museo histórico y arqueológico de la ciudad.",
-            "imagen": "img/museo.jpg"
+            "imagen": "../assets/images/museo.jpg"
         },
         {
             "nombre": "Isla Pingüino",
             "descripcion": "Hogar de una importante colonia de pingüinos de penacho amarillo.",
-            "imagen": "img/isla-pinguino.jpg"
+            "imagen": "../assets/images/isla.jpg"
         }
     ]
 }

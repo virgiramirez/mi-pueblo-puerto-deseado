@@ -58,9 +58,10 @@ if (turismoContainer) {
                 const card = document.createElement("div");
                 card.classList.add("card");
                 card.innerHTML = `
+                    <img src="${lugar.imagen}" alt="${lugar.nombre}">
                     <h3>${lugar.nombre}</h3>
                     <p>${lugar.descripcion}</p>
-                    `;
+                `;
                 turismoContainer.appendChild(card);
             });
         })
